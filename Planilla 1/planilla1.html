@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Gineco-Obstetra</title>
+    </head>
+<body class="bg-light">
+
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-header text-center">
+                <h5>Dr. José Ramón Medina Ochoa</h5>
+                <p>Ginecología Obstetricia - Ecografía</p>
+                <p>M.A.S.A.S 16786 | C.M.B. 686</p>
+            </div>
+            
+            <div class="container mt-4">
+                <h2 class="text-center mb-4">Formulario de Historia Clínica</h2>
+
+                <div class="card-body">
+                    <form method="POST" action="/submit-form">
+                        <div class="row mb-3">
+                            <div class="col-md-10">
+                                <label for="paciente" class="form-label">Paciente</label>
+                                <input type="text" class="form-control" id="paciente" name="paciente">
+                            </div>
+                            <div class="col-md-2">
+                                <label for="edad" class="form-label">Edad</label>
+                                <input type="number" class="form-control" id="edad" name="edad">
+                            </div>
+                        </div>
+
+                        <h5 class="mt-4 text-center">Antecedentes Gineco-Obstétricos</h5>
+                        <div class="row mb-3">
+                            <div class="col-md-2">
+                                <label for="gestas" class="form-label">Gestas</label>
+                                <input type="number" class="form-control" id="gestas" name="gestas">
+                            </div>
+                            <div class="col-md-2">
+                                <label for="paras" class="form-label">Paras</label>
+                                <input type="number" class="form-control" id="paras" name="paras">
+                            </div>
+                            <div class="col-md-2">
+                                <label for="cesareas" class="form-label">Cesáreas</label>
+                                <input type="number" class="form-control" id="cesareas" name="cesareas">
+                            </div>
+                            <div class="col-md-2">
+                                <label for="abortos" class="form-label">Abortos</label>
+                                <input type="number" class="form-control" id="abortos" name="abortos">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="otros" class="form-label">Otros</label>
+                                <input type="text" class="form-control" id="otros" name="otros">
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-4">
+                                <label for="fur" class="form-label">F.U.R.</label>
+                                <input type="text" class="form-control" id="fur" name="fur">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="fup" class="form-label">F.U.P.</label>
+                                <input type="text" class="form-control" id="fup" name="fup">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="pmf" class="form-label">P.M.F.</label>
+                                <input type="text" class="form-control" id="pmf" name="pmf">
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="ult_citol" class="form-label">ULT/CITOL</label>
+                                <input type="text" class="form-control" id="ult_citol" name="ult_citol">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="anticoncepcion" class="form-label">Anticoncepción</label>
+                                <input type="text" class="form-control" id="anticoncepcion" name="anticoncepcion">
+                            </div>
+                        </div>
+
+                        <h5 class="mt-4 text-center">Ecografía Pélvica</h5>
+                        <div class="row mb-3">
+                            <div class="col-md-3">
+                                <label for="vejiga" class="form-label">Vejiga</label>
+                                <input type="text" class="form-control" id="vejiga" name="vejiga">
+                            </div>
+                            <div class="col-md-3">
+                                <label for="utero" class="form-label">Útero</label>
+                                <input type="text" class="form-control" id="utero" name="utero">
+                            </div>
+                            <div class="col-md-3">
+                                <label for="anexos" class="form-label">Anexos</label>
+                                <input type="text" class="form-control" id="anexos" name="anexos">
+                            </div>
+                            <div class="col-md-3">
+                                <label for="otros_eco" class="form-label">Otros</label>
+                                <input type="text" class="form-control" id="otros_eco" name="otros_eco">
+                            </div>
+                        </div>
+
+                        <h5 class="mt-4 text-center">Ecografía Mamaria</h5>
+                        <div class="mb-3">
+                            <textarea class="form-control" id="ecografia_mamaria" name="ecografia_mamaria" rows="2"></textarea>
+                        </div>
+
+                        <h5 class="mt-4 text-center">Colposcopía</h5>
+                        <div class="row mb-3">
+                            <div class="col-md-3">
+                                <label for="cervix" class="form-label">Cérvix</label>
+                                <input type="text" class="form-control" id="cervix" name="cervix">
+                            </div>
+                            <div class="col-md-3">
+                                <label for="lugol" class="form-label">Lugol</label>
+                                <input type="text" class="form-control" id="lugol" name="lugol">
+                            </div>
+                            <div class="col-md-3">
+                                <label for="secrecion_vaginal" class="form-label">Secreción Vaginal</label>
+                                <input type="text" class="form-control" id="secrecion_vaginal" name="secrecion_vaginal">
+                            </div>
+                            <div class="col-md-3">
+                                <label for="citologia" class="form-label">Citología</label>
+                                <input type="text" class="form-control" id="citologia" name="citologia">
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="peso" class="form-label">Peso</label>
+                                <input type="text" class="form-control" id="peso" name="peso">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="ta" class="form-label">T.A.</label>
+                                <input type="text" class="form-control" id="ta" name="ta">
+                            </div>
+                        </div>
+
+                        <h5 class="mt-4 text-center">TTO / Conclusiones / Observaciones</h5>
+                        <div class="mb-3">
+                            <textarea class="form-control" id="observaciones" name="observaciones" rows="4"></textarea>
+                        </div>
+
+                        <div class="text-center mt-4">
+                            <button type="button" onclick="generarPDF()" class="btn btn-success">Generar PDF</button>
+                            <button type="reset" class="btn btn-danger">Reestablecer</button>
+                        </div>
+                    </form>       
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

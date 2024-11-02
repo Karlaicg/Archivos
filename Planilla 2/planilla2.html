@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Gineco-Obstetra</title>
+    </head>
+<body class="bg-light">
+
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-header text-center">
+                <h5>Dr. José Ramón Medina Ochoa</h5>
+                <p>Ginecología Obstetricia - Ecografía</p>
+                <p>M.A.S.A.S 16786 | C.M.B. 686</p>
+            </div>
+            
+            <div class="container mt-4">
+                <h2 class="text-center mb-4">Formulario de Historia Clínica</h2>
+                <form>
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr class="text-center">
+                                    <th>Fecha</th>
+                                    <th>T.A</th>
+                                    <th>A.U</th>
+                                    <th>Peso</th>
+                                    <th>F.F</th>
+                                    <th>Present</th>
+                                    <th>Edema</th>
+                                    <th>E.G</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="date" class="form-control" name="fecha"></td>
+                                    <td><input type="text" class="form-control" name="ta"></td>
+                                    <td><input type="text" class="form-control" name="au"></td>
+                                    <td><input type="text" class="form-control" name="peso"></td>
+                                    <td><input type="text" class="form-control" name="ff"></td>
+                                    <td><input type="text" class="form-control" name="present"></td>
+                                    <td><input type="text" class="form-control" name="edema"></td>
+                                    <td><input type="text" class="form-control" name="eg"></td>
+                                </tr>
+
+                                <tr>
+                                    <td><input type="date" class="form-control" name="fecha2"></td>
+                                    <td><input type="text" class="form-control" name="ta2"></td>
+                                    <td><input type="text" class="form-control" name="au2"></td>
+                                    <td><input type="text" class="form-control" name="peso2"></td>
+                                    <td><input type="text" class="form-control" name="ff2"></td>
+                                    <td><input type="text" class="form-control" name="present2"></td>
+                                    <td><input type="text" class="form-control" name="edema2"></td>
+                                    <td><input type="text" class="form-control" name="eg2"></td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><input type="date" class="form-control" name="fecha3"></td>
+                                    <td><input type="text" class="form-control" name="ta3"></td>
+                                    <td><input type="text" class="form-control" name="au3"></td>
+                                    <td><input type="text" class="form-control" name="peso3"></td>
+                                    <td><input type="text" class="form-control" name="ff3"></td>
+                                    <td><input type="text" class="form-control" name="present3"></td>
+                                    <td><input type="text" class="form-control" name="edema3"></td>
+                                    <td><input type="text" class="form-control" name="eg3"></td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><input type="date" class="form-control" name="fecha4"></td>
+                                    <td><input type="text" class="form-control" name="ta4"></td>
+                                    <td><input type="text" class="form-control" name="au4"></td>
+                                    <td><input type="text" class="form-control" name="peso4"></td>
+                                    <td><input type="text" class="form-control" name="ff4"></td>
+                                    <td><input type="text" class="form-control" name="present4"></td>
+                                    <td><input type="text" class="form-control" name="edema4"></td>
+                                    <td><input type="text" class="form-control" name="eg4"></td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><input type="date" class="form-control" name="fecha5"></td>
+                                    <td><input type="text" class="form-control" name="ta5"></td>
+                                    <td><input type="text" class="form-control" name="au5"></td>
+                                    <td><input type="text" class="form-control" name="peso5"></td>
+                                    <td><input type="text" class="form-control" name="ff5"></td>
+                                    <td><input type="text" class="form-control" name="present5"></td>
+                                    <td><input type="text" class="form-control" name="edema5"></td>
+                                    <td><input type="text" class="form-control" name="eg5"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+        
+                    <div class="mb-3">
+                        <h5 class="mt-4 text-center">Embarazo Actual</h5>
+                        <div class="row">
+                            <div class="col">
+                                <label for="fecha-embarazo" class="form-label">Fecha</label>
+                                <input type="date" class="form-control" id="fecha-embarazo" name="fecha-embarazo">
+                            </div>
+                            <div class="col-md-3">
+                                <label for="fur" class="form-label">F.U.R</label>
+                                <input type="text" class="form-control" id="fur" name="fur">
+                            </div>
+                            <div class="col-md-3">
+                                <label for="fpp" class="form-label">F.P.P</label>
+                                <input type="text" class="form-control" id="fpp" name="fpp">
+                            </div>
+                            <div class="col-md-3">
+                                <label for="eg2" class="form-label">E.G</label>
+                                <input type="text" class="form-control" id="eg2" name="eg2">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <h5 class="mt-3 text-center">Antecedentes Ginecológicos/Obstétricos</h5>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <label for="gestas" class="form-label">Gestas</label>
+                                <input type="text" class="form-control" id="gestas" name="gestas">
+                            </div>
+                            <div class="col-md-2">
+                                <label for="partos" class="form-label">Paras</label>
+                                <input type="text" class="form-control" id="partos" name="partos">
+                            </div>
+                            <div class="col-md-2">
+                                <label for="cesareas" class="form-label">Cesáreas</label>
+                                <input type="text" class="form-control" id="cesareas" name="cesareas">
+                            </div>
+                            <div class="col-md-3">
+                                <label for="abortos" class="form-label">Abortos</label>
+                                <input type="text" class="form-control" id="abortos" name="abortos">
+                            </div>
+                            <div class="col-md-3">
+                                <label for="otros" class="form-label">Otros</label>
+                                <input type="text" class="form-control" id="otros" name="otros">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="pmf" class="form-label">F.U.P</label>
+                                <input type="text" class="form-control" id="pmf" name="pmf">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="pmf" class="form-label">P.M.F</label>
+                                <input type="text" class="form-control" id="pmf" name="pmf">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="ult-citol" class="form-label">ULT/CITOL</label>
+                                <input type="text" class="form-control" id="ult-citol" name="ult-citol">
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="mb-3">
+                        <h5 class="mt-4 text-center">Examen Físico</h5>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="cabeza-cuello" class="form-label">Cabeza/Cuello</label>
+                                <input type="text" class="form-control" id="cabeza-cuello" name="cabeza-cuello">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="cardio-pulmonar" class="form-label">Cardio Pulmonar</label>
+                                <input type="text" class="form-control" id="cardio-pulmonar" name="cardio-pulmonar">
+                            </div>
+                            <div class="col-md-12">
+                                <label for="mamas" class="form-label">Mamas</label>
+                                <input type="text" class="form-control" id="mamas" name="mamas">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="abdomen" class="form-label">Abdomen</label>
+                                <input type="text" class="form-control" id="abdomen" name="abdomen">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="ms" class="form-label">MSS/MIS</label>
+                                <input type="text" class="form-control" id="ms" name="ms">
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="mb-3">
+                        <h5 class="mt-4 text-center">Doppler</h5>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="art-uterina" class="form-label">Art. Uterina</label>
+                                <input type="text" class="form-control" id="art-uterina" name="art-uterina">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="art-umbilical" class="form-label">Art. Umbilical</label>
+                                <input type="text" class="form-control" id="art-umbilical" name="art-umbilical">
+                            </div>
+                            <div class="col-md-12">
+                                <label for="ductus-venoso" class="form-label">Ductus Venoso</label>
+                                <input type="text" class="form-control" id="ductus-venoso" name="ductus-venoso">
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="mb-3">
+                        <h5 class="mt-4 text-center">Observaciones</h5>
+                        <textarea class="form-control" id="observaciones" name="observaciones" rows="4"></textarea>
+                    </div>
+        
+                    <div class="text-center mt-4">
+                        <button type="button" onclick="generarPDF()" class="btn btn-success">Generar PDF</button>
+                        <button type="reset" class="btn btn-danger">Reestablecer</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
